@@ -1,0 +1,20 @@
+package com.jstamps.docai.dto.medInstitution;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+import javax.validation.constraints.NotBlank;
+
+@Data
+@AllArgsConstructor
+public class MedInstitutionDto {
+
+    private String id;
+    private String membershipOrganizationId;
+
+    @NotBlank
+    private String name;
+
+    @NotBlank
+    private String address;
+}
